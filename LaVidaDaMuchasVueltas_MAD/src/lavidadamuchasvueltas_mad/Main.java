@@ -5,6 +5,8 @@
  */
 package lavidadamuchasvueltas_mad;
 
+import java.util.Random;
+
 /**
  *
  * @author 1DAW
@@ -12,12 +14,18 @@ package lavidadamuchasvueltas_mad;
 public class Main {
 
     public static void main(String[] args) {
-        
-        Boolean generoYo=funcionesPersona.generoAleatorio();
-        String nombreYo=funcionesPersona.nombreAleatorio(generoYo);
-        String apellidosYo=funcionesPersona.apellidosAleatorios()+" "+funcionesPersona.apellidosAleatorios();
-        
-        
+
+        /**
+         * Boolean generoYo = funcionesPersona.generoAleatorio(); String
+         * nombreYo = funcionesPersona.nombreAleatorio(generoYo); String
+         * apellidosYo = funcionesPersona.apellidosAleatorios() + " " +
+         * funcionesPersona.apellidosAleatorios();
+         */
+        Random ran = new Random();
+        if (ran.nextBoolean()) {
+            System.out.println("Mujer");
+        } else {
+            System.out.println("Hombre");
+        }
     }
-    
 }
