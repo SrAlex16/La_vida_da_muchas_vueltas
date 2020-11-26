@@ -56,4 +56,26 @@ public class FuncionesPersona {
         } 
         return nombre;
     }
+    
+    public static String apellidosAleatorios (){
+        Random ran=new Random ();
+        String apellidos="";
+        switch (ran.nextInt(5)){
+            case 0:
+                apellidos="Gomez";
+                break;
+            case 1:
+                apellidos="Gutierrez";
+                break;
+            case 2:
+                apellidos="";
+                break;
+            case 3:
+                apellidos="";
+                break;
+            case 4:
+                apellidos="";
+                break;
+        }
+    }
 }

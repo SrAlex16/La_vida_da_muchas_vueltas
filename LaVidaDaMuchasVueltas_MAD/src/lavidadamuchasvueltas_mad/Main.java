@@ -5,7 +5,6 @@
  */
 package lavidadamuchasvueltas_mad;
 
-import java.util.Random;
 import personas.FuncionesPersona;
 
 /**
@@ -17,16 +16,13 @@ public class Main {
     public static void main(String[] args) {
 
         boolean generoYo = FuncionesPersona.generoAleatorio();
-        
-        
+
         String nombreYo = FuncionesPersona.nombreAleatorio(generoYo);
         System.out.println(nombreYo);
-        
+
         String apellidosYo = FuncionesPersona.apellidosAleatorios() + " "
                 + FuncionesPersona.apellidosAleatorios();
 
-        
     }
-    
-   
+
 }
