@@ -16,10 +16,10 @@ public class FuncionesPersona {
     public static Boolean generoAleatorio() {
         Random ran = new Random();
         if (ran.nextBoolean()) {
-            System.out.println("Mujer ");
+            //System.out.println("Mujer ");
             return true;
         } else {
-            System.out.println("Hombre ");
+            //System.out.println("Hombre ");
             return false;
         }
     }
