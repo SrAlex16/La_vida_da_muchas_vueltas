@@ -14,14 +14,19 @@ import personas.FuncionesPersona;
  */
 public class Main {
 
-    public static void main (String[] args) {
+    public static void main(String[] args) {
 
-        /**
-         * Boolean generoYo = funcionesPersona.generoAleatorio(); String
-         * nombreYo = funcionesPersona.nombreAleatorio(generoYo); String
-         * apellidosYo = funcionesPersona.apellidosAleatorios() + " " +
-         * funcionesPersona.apellidosAleatorios();
-         */
-        boolean genero= FuncionesPersona.generoAleatorio();
+        boolean generoYo = FuncionesPersona.generoAleatorio();
+        
+        
+        String nombreYo = FuncionesPersona.nombreAleatorio(generoYo);
+        System.out.println(nombreYo);
+        
+        String apellidosYo = FuncionesPersona.apellidosAleatorios() + " "
+                + FuncionesPersona.apellidosAleatorios();
+
+        
     }
+    
+   
 }

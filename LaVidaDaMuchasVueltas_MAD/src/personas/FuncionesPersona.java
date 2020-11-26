@@ -12,8 +12,9 @@ import java.util.Random;
  * @author 1DAW
  */
 public class FuncionesPersona {
-    public static Boolean generoAleatorio(){
-    Random ran = new Random();
+
+    public static Boolean generoAleatorio() {
+        Random ran = new Random();
         if (ran.nextBoolean()) {
             System.out.println("Mujer");
             return true;
@@ -21,5 +22,38 @@ public class FuncionesPersona {
             System.out.println("Hombre");
             return false;
         }
+    }
+
+    public static String nombreAleatorio(boolean bool) {
+        Random ran = new Random();
+        String nombre="";
+        
+        switch (ran.nextInt(5)) {
+            case 0:
+                nombre=(bool ? "María" : "Mariano");
+                break;
+                
+            case 1:
+                nombre=(bool ? "Lucía" : "Alberto");
+                break;
+                
+            case 2:
+                nombre=(bool ? "Mariana" : "Roberto");
+                break;
+                
+            case 3:
+                nombre=(bool ? "Marta" : "Pedro");
+                break;
+                
+            case 4:
+                nombre=(bool ? "Rocío" : "Jose");
+                break;
+                
+            case 5:
+                nombre=(bool ? "Paula": "Alberto");
+                break;
+                
+        } 
+        return nombre;
     }
 }
