@@ -22,5 +22,16 @@ public class Main {
 
         String apellidosYo = FuncionesPersona.apellidosAleatorios() + FuncionesPersona.apellidosAleatorios();
         System.out.print(apellidosYo);
+        
+       //variablesMama
+        String nombreMama;
+        
+        
+        //variablesYo
+        byte sociabilidadMaxYo=0;
+        byte empatiaMaxYo=0;
+        byte inteligenciaMaxYo=0;
+        byte velocidadMaxYo=0;
+        byte fuerzaMaxYo=0;
     }
 }
