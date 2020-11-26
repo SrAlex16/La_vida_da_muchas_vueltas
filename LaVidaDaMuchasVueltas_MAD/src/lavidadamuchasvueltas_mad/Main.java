@@ -14,24 +14,39 @@ import personas.FuncionesPersona;
 public class Main {
 
     public static void main(String[] args) {
-
+       //variablesMama
+        String nombreMama;
+        String apellidosMama;
+        String generoMama; //boolean
+        byte sociabilidadMama;
+        byte empatiaMama;
+        byte inteligenciaMama;
+        byte velocidadMama;
+        byte fuerzaMama;
+        
+        //variablesPapa
+        String nombrePapa;
+        String apellidosPapa;
+        String generoPapa; //boolean
+        byte sociabilidadPapa;
+        byte empatiaPapa;
+        byte inteligenciaPapa;
+        byte velocidadPapa;
+        byte fuerzaPapa;
+        
+        //variablesYo
         boolean generoYo = FuncionesPersona.generoAleatorio();
-
+        
         String nombreYo = FuncionesPersona.nombreAleatorio(generoYo);
         System.out.print(nombreYo);
 
         String apellidosYo = FuncionesPersona.apellidosAleatorios() + FuncionesPersona.apellidosAleatorios();
         System.out.print(apellidosYo);
         
-       //variablesMama
-        String nombreMama;
-        
-        
-        //variablesYo
-        byte sociabilidadMaxYo=0;
-        byte empatiaMaxYo=0;
-        byte inteligenciaMaxYo=0;
-        byte velocidadMaxYo=0;
-        byte fuerzaMaxYo=0;
+        byte sociabilidadMaxYo;
+        byte empatiaMaxYo;
+        byte inteligenciaMaxYo;
+        byte velocidadMaxYo;
+        byte fuerzaMaxYo;
     }
 }
