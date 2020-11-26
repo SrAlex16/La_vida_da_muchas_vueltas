@@ -13,10 +13,10 @@ public class Main {
 
     public static void main(String[] args) {
         
+        Boolean generoYo=funcionesPersona.generoAleatorio();
+        String nombreYo=funcionesPersona.nombreAleatorio(generoYo);
+        String apellidosYo=funcionesPersona.apellidosAleatorios()+" "+funcionesPersona.apellidosAleatorios();
         
-        String nombreYo=funcionesPersona.nombreAleatorio();
-        String apellidosYo=funcionesPersona.apellidosAleatorios();
-        String generoYo=funcionesPersona.generoAleatorio();
         
     }
     
