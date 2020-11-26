@@ -18,11 +18,9 @@ public class Main {
         boolean generoYo = FuncionesPersona.generoAleatorio();
 
         String nombreYo = FuncionesPersona.nombreAleatorio(generoYo);
-        System.out.println(nombreYo);
+        System.out.print(nombreYo);
 
-        String apellidosYo = FuncionesPersona.apellidosAleatorios() + " "
-                + FuncionesPersona.apellidosAleatorios();
-
+        String apellidosYo = FuncionesPersona.apellidosAleatorios() + FuncionesPersona.apellidosAleatorios();
+        System.out.print(apellidosYo);
     }
-
 }
