@@ -98,7 +98,7 @@ public class FuncionesPersona {
     public static String imprimePersona(String nombre, String apellidos, boolean genero, byte sociabilidad, byte empatia, byte inteligencia, byte velocidad, byte fuerza){
         
         String info = nombre+apellidos+"("+(genero ? " Mujer":" Hombre")+")\n"+"------------"+"\n Sociabilidad: "+sociabilidad+
-                "\n Empatía: "+empatia+"\n Inteligencia: "+inteligencia+"\n Velocidad: "+velocidad+"\n Fuerza: "+fuerza;
+                "\n Empatía: "+empatia+"\n Inteligencia: "+inteligencia+"\n Velocidad: "+velocidad+"\n Fuerza: "+fuerza+"\n\n";
     return info;
     }
 }
