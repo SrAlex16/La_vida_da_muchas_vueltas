@@ -80,4 +80,25 @@ public class FuncionesPersona {
         return apellidos;
     }
 
+    public static byte valorEstadisticaAleatorio() {
+        Random ran = new Random();
+        return (byte)(ran.nextInt(101));
+    }
+
+    public static byte valorEstadisticaAleatorio(int min) {
+        Random ran = new Random();
+        return (byte) ((ran.nextInt(100-min))+min);
+    }
+    
+    public static byte valorEstadisticaAleatorio(int min, int max){
+        Random ran = new Random();
+        return  (byte) ((ran.nextInt(max-min))+min);
+    }
+    
+    public static String imprimePersona(String nombre, String apellidos, boolean genero, byte sociabilidad, byte empatia, byte inteligencia, byte velocidad, byte fuerza){
+        
+        String info = nombre+apellidos+"("+(genero ? " Mujer":" Hombre")+")\n"+"------------"+"\n Sociabilidad: "+sociabilidad+
+                "\n Empatía: "+empatia+"\n Inteligencia: "+inteligencia+"\n Velocidad: "+velocidad+"\n Fuerza: "+fuerza;
+    return info;
+    }
 }
