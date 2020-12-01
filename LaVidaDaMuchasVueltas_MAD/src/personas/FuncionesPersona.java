@@ -14,14 +14,7 @@ import java.util.Random;
 public class FuncionesPersona {
 
     public static Boolean generoAleatorio() {
-        Random ran = new Random();
-        if (ran.nextBoolean()) {
-            //System.out.println("Mujer ");
-            return true;
-        } else {
-            //System.out.println("Hombre ");
-            return false;
-        }
+        return new Random().nextBoolean();
     }
 
     public static String nombreAleatorio(boolean bool) {
