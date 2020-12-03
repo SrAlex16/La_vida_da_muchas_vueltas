@@ -19,58 +19,41 @@ public class FuncionesPersona {
 
     public static String nombreAleatorio(boolean bool) {
         Random ran = new Random();
-        String nombre = "";
-
-        switch (ran.nextInt(5)) {
-            case 0:
-                nombre = (bool ? "María" : "Mariano");
-                break;
-
-            case 1:
-                nombre = (bool ? "Lucía" : "Alberto");
-                break;
-
-            case 2:
-                nombre = (bool ? "Mariana" : "Roberto");
-                break;
-
-            case 3:
-                nombre = (bool ? "Marta" : "Pedro");
-                break;
-
-            case 4:
-                nombre = (bool ? "Rocío" : "Jose");
-                break;
-
-            case 5:
-                nombre = (bool ? "Paula" : "Alberto");
-                break;
-
-        }
+        String nombre="";
+        String[] nombresHombre={"Eustaquio", "Fernando","Sepher","Ali","Mariano","Pato","Xerxes","Antón","Claudio",
+            "Koldo","Patricio","Alexios","Manuel","Rafael","Mauricio","Gregorio","Íker","Carlos","Javier","Francisco",
+            "Nemesio","Anselmo","Miguel","Ignacio","Oscar","Alex","Juan","Lander", "Agustin", "Cesar", "Natxo", "Nacho",
+            "Javier", "Jorge", "Pablo", "Guillermo", "Pepe", "Gabriel", "Juan", "Francisco", "Franco", "Miguel", "Gonzalo",
+            "Abrahán","Luís","Juan","Rafael","Alberto","Raúl", "Abel","Antonio","Enrique", "Jose", "Adrian", "Dario", "Mateo",
+            "Luis", "Alejandro", "Leandro", "Enzo", "Paco", "Amador", "Felix"};
+        
+        String[] nombresMujer={"Cristobalina", "Paca", "Presentación","Sarai","Antonia",
+            "Loli","Juani","Olga","Susana", "Ruth","Eustaquia","Godofreda","Josefina",
+            "Ermerigilda","Úrsula","Angie","Carla","Isabel","Marta","Dolores","Sonia",
+            "Raquel","Esther","Erika","Patrocinio","Luisa","Natalia","Almudena","Laura",
+            "Kassandra","Violeta","María","Mery","Susana","Daniela","Juana","Rebeca","Eustaquia",
+            "Herminia","Sandra","Lorena", "Maria", "Paula", "Ainhoa", "Mar","Manoli","Julia",
+            "Rocio","Marina","Arelis","Blanca","Celeste","Lola","Dolores", "Yolanda", "Noemí", 
+            "Nuria", "Carmen","Sheila","Lucia", "Alia", "Alma", "Cristina", "Lucy", "Tamara", "Victoria"};
+        
+        
+        
         return nombre;
     }
 
     public static String apellidosAleatorios() {
         Random ran = new Random();
-        String apellidos = "";
-        switch (ran.nextInt(5)) {
-            case 0:
-                apellidos = " Gomez";
-                break;
-            case 1:
-                apellidos = " Gutierrez";
-                break;
-            case 2:
-                apellidos = " Perez";
-                break;
-            case 3:
-                apellidos = " Sanchez";
-                break;
-            case 4:
-                apellidos = " Iglesias";
-                break;
-        }
-        return apellidos;
+        String apellido = "";
+        String[] apellidos={"Fernández","De todos los santos","Heredia", "Aguirre","Del Piero",
+            "Trump","Obama","Rajoy","Pérez","Reverte","Rojas","Muñoz","de la Rosa", "de la O",
+            "Guiérrez","Molina","López","Romero","Franco","Martínez","Fernández","Bas","Buttera",
+            "Pajero","Vega","Guzmán","Varo","Páramos","Pérez","Vivo","Piernas","Moco","Verde",
+            "Pitagoras","Pintor","Delgado","Vietes","Portero","Pestaña", "Guerrero", "Sardà", 
+            "Reyes", "Callado", "Santisteban", "Rubio", "Flores", "Enfriasopas","Gallego", "Ventura",
+            "Garcia","Melero","Morales","Soldado","Silva","Hernández","Ruiz","Machís","Duarte","Díaz",
+            "Vico","Montoro","Sacacuernos","Cermuzo","Cancamusa"};
+        
+        return apellido;
     }
 
     public static byte valorEstadisticaAleatorio() {
