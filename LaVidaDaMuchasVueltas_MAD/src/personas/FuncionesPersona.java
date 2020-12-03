@@ -19,7 +19,6 @@ public class FuncionesPersona {
 
     public static String nombreAleatorio(boolean bool) {
         Random ran = new Random();
-        String nombre="";
         String[] nombresHombre={"Eustaquio", "Fernando","Sepher","Ali","Mariano","Pato","Xerxes","Antón","Claudio",
             "Koldo","Patricio","Alexios","Manuel","Rafael","Mauricio","Gregorio","Íker","Carlos","Javier","Francisco",
             "Nemesio","Anselmo","Miguel","Ignacio","Oscar","Alex","Juan","Lander", "Agustin", "Cesar", "Natxo", "Nacho",
@@ -35,15 +34,15 @@ public class FuncionesPersona {
             "Herminia","Sandra","Lorena", "Maria", "Paula", "Ainhoa", "Mar","Manoli","Julia",
             "Rocio","Marina","Arelis","Blanca","Celeste","Lola","Dolores", "Yolanda", "Noemí", 
             "Nuria", "Carmen","Sheila","Lucia", "Alia", "Alma", "Cristina", "Lucy", "Tamara", "Victoria"};
-        
-        
-        
-        return nombre;
+        if (FuncionesPersona.generoAleatorio()){
+            return nombresMujer[ran.nextInt(nombresMujer.length)];
+        } else{
+                return nombresHombre[ran.nextInt(nombresHombre.length)];
+        }
     }
 
     public static String apellidosAleatorios() {
         Random ran = new Random();
-        String apellido = "";
         String[] apellidos={"Fernández","De todos los santos","Heredia", "Aguirre","Del Piero",
             "Trump","Obama","Rajoy","Pérez","Reverte","Rojas","Muñoz","de la Rosa", "de la O",
             "Guiérrez","Molina","López","Romero","Franco","Martínez","Fernández","Bas","Buttera",
@@ -53,7 +52,7 @@ public class FuncionesPersona {
             "Garcia","Melero","Morales","Soldado","Silva","Hernández","Ruiz","Machís","Duarte","Díaz",
             "Vico","Montoro","Sacacuernos","Cermuzo","Cancamusa"};
         
-        return apellido;
+        return apellidos[ran.nextInt(apellidos.length)];
     }
 
     public static byte valorEstadisticaAleatorio() {
