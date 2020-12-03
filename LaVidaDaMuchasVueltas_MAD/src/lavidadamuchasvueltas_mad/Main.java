@@ -13,6 +13,8 @@ public class Main {
        //variablesMama
         String nombreMama = FuncionesPersona.nombreAleatorio(true);
         String apellidosMama = FuncionesPersona.apellidosAleatorios()+FuncionesPersona.apellidosAleatorios();
+        int edadMama= FuncionesPersona.valorEstadisticaAleatorio(30, 100);
+        boolean vivaMama;
         boolean generoMama = true;
         byte sociabilidadMama= (FuncionesPersona.valorEstadisticaAleatorio(50));
         byte empatiaMama= (FuncionesPersona.valorEstadisticaAleatorio(50));
@@ -23,6 +25,8 @@ public class Main {
         //variablesPapa
         String nombrePapa = FuncionesPersona.nombreAleatorio(false);
         String apellidosPapa = FuncionesPersona.apellidosAleatorios()+FuncionesPersona.apellidosAleatorios();
+        int edadPapa= (FuncionesPersona.valorEstadisticaAleatorio(30, 100));
+        boolean vivoPapa;
         boolean generoPapa = false;
         byte sociabilidadPapa= (FuncionesPersona.valorEstadisticaAleatorio(50));
         byte empatiaPapa= (FuncionesPersona.valorEstadisticaAleatorio(50));
@@ -31,9 +35,9 @@ public class Main {
         byte fuerzaPapa= (FuncionesPersona.valorEstadisticaAleatorio(50));
         
         //variablesYo
+        int edadYo=0;
+        boolean vivoYo;
         boolean generoYo = FuncionesPersona.generoAleatorio();
-        
-        //variablesYo
         byte sociabilidadMaxYo= (FuncionesPersona.valorEstadisticaAleatorio(50));
         byte empatiaMaxYo= (FuncionesPersona.valorEstadisticaAleatorio(50));
         byte inteligenciaMaxYo= (FuncionesPersona.valorEstadisticaAleatorio(50));
