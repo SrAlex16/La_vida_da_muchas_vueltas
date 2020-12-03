@@ -1,6 +1,7 @@
 
 package lavidadamuchasvueltas_mad;
 
+import java.util.Random;
 import personas.FuncionesPersona;
 
 /**
@@ -35,6 +36,9 @@ public class Main {
         byte fuerzaPapa= (FuncionesPersona.valorEstadisticaAleatorio(50));
         
         //variablesYo
+        String nombreYo = FuncionesPersona.nombreAleatorio(generoYo);
+
+        String apellidosYo = apellidosPapa.substring(0,apellidosPapa.indexOf(" "))+apellidosMama.substring(0,apellidosMama.indexOf(" "));
         int edadYo=0;
         boolean vivoYo;
         boolean generoYo = FuncionesPersona.generoAleatorio();
@@ -44,10 +48,21 @@ public class Main {
         byte velocidadMaxYo= (FuncionesPersona.valorEstadisticaAleatorio(50));
         byte fuerzaMaxYo= (FuncionesPersona.valorEstadisticaAleatorio(50));
         
-        String nombreYo = FuncionesPersona.nombreAleatorio(generoYo);
-
-        String apellidosYo = FuncionesPersona.apellidosAleatorios() + FuncionesPersona.apellidosAleatorios();
         
+        // Creacion de aleatorio de hermanos.
+        Random ran=new Random();
+        for (int i = 0; i < ran.nextInt(3); i++) {
+          String nombreHermano1 = FuncionesPersona.nombreAleatorio(false);
+        String apellidosHermano1 = FuncionesPersona.apellidosAleatorios()+FuncionesPersona.apellidosAleatorios();
+        int edadHermano1= (FuncionesPersona.valorEstadisticaAleatorio(30, 100));
+        boolean vivoHermano1;
+        boolean generoHermano1 = false;
+        byte sociabilidadHermano1= (FuncionesPersona.valorEstadisticaAleatorio(50));
+        byte empatiaHermano1= (FuncionesPersona.valorEstadisticaAleatorio(50));
+        byte inteligenciaHermano1= (FuncionesPersona.valorEstadisticaAleatorio(50));
+        byte velocidadHermano1= (FuncionesPersona.valorEstadisticaAleatorio(50));
+        byte fuerzaHermano1= (FuncionesPersona.valorEstadisticaAleatorio(50));   
+        }
         System.out.println(FuncionesPersona.imprimePersona(nombreYo, apellidosYo, generoYo, sociabilidadMaxYo, empatiaMaxYo, inteligenciaMaxYo, velocidadMaxYo, fuerzaMaxYo));
         
         System.out.println(FuncionesPersona.imprimePersona(nombreMama, apellidosMama, generoMama, sociabilidadMama, empatiaMama, inteligenciaMama, velocidadMama, fuerzaMama));
