@@ -51,7 +51,8 @@ public class Main {
         
         // Creacion de aleatorio de hermanos.
         Random ran=new Random();
-        for (int i = 0; i < ran.nextInt(3); i++) {
+      
+                    
           String nombreHermano1 = FuncionesPersona.nombreAleatorio(false);
         String apellidosHermano1 = FuncionesPersona.apellidosAleatorios()+FuncionesPersona.apellidosAleatorios();
         int edadHermano1= (FuncionesPersona.valorEstadisticaAleatorio(30, 100));
@@ -62,7 +63,30 @@ public class Main {
         byte inteligenciaHermano1= (FuncionesPersona.valorEstadisticaAleatorio(50));
         byte velocidadHermano1= (FuncionesPersona.valorEstadisticaAleatorio(50));
         byte fuerzaHermano1= (FuncionesPersona.valorEstadisticaAleatorio(50));   
-        }
+        
+        String nombreHermano2 = FuncionesPersona.nombreAleatorio(false);
+        String apellidosHermano2 = FuncionesPersona.apellidosAleatorios()+FuncionesPersona.apellidosAleatorios();
+        int edadHermano2= (FuncionesPersona.valorEstadisticaAleatorio(30, 100));
+        boolean vivoHermano2;
+        boolean generoHermano2 = false;
+        byte sociabilidadHermano2= (FuncionesPersona.valorEstadisticaAleatorio(50));
+        byte empatiaHermano2= (FuncionesPersona.valorEstadisticaAleatorio(50));
+        byte inteligenciaHermano2= (FuncionesPersona.valorEstadisticaAleatorio(50));
+        byte velocidadHermano2= (FuncionesPersona.valorEstadisticaAleatorio(50));
+        byte fuerzaHermano2= (FuncionesPersona.valorEstadisticaAleatorio(50));  
+        
+        String nombreHermano3 = FuncionesPersona.nombreAleatorio(false);
+        String apellidosHermano3 = FuncionesPersona.apellidosAleatorios()+FuncionesPersona.apellidosAleatorios();
+        int edadHermano3= (FuncionesPersona.valorEstadisticaAleatorio(30, 100));
+        boolean vivoHermano3;
+        boolean generoHermano3 = false;
+        byte sociabilidadHermano3= (FuncionesPersona.valorEstadisticaAleatorio(50));
+        byte empatiaHermano3= (FuncionesPersona.valorEstadisticaAleatorio(50));
+        byte inteligenciaHermano3= (FuncionesPersona.valorEstadisticaAleatorio(50));
+        byte velocidadHermano3= (FuncionesPersona.valorEstadisticaAleatorio(50));
+        byte fuerzaHermano3= (FuncionesPersona.valorEstadisticaAleatorio(50));  
+       
+        
         System.out.println(FuncionesPersona.imprimePersona(nombreYo, apellidosYo, generoYo, sociabilidadMaxYo, empatiaMaxYo, inteligenciaMaxYo, velocidadMaxYo, fuerzaMaxYo));
         
         System.out.println(FuncionesPersona.imprimePersona(nombreMama, apellidosMama, generoMama, sociabilidadMama, empatiaMama, inteligenciaMama, velocidadMama, fuerzaMama));
