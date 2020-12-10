@@ -57,7 +57,7 @@ public class FuncionesPersona {
 
     public static byte valorEstadisticaAleatorio() {
         Random ran = new Random();
-        return (byte) (ran.nextInt(101));
+        return (byte) (ran.nextInt(100));
     }
 
     public static byte valorEstadisticaAleatorio(int min) {
