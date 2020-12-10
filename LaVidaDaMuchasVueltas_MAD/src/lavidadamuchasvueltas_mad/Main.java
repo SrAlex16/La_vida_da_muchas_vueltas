@@ -95,11 +95,11 @@ public class Main {
                 break;
 
             case 3:
-                nombreHermano3 = FuncionesPersona.nombreAleatorio(FuncionesPersona.generoAleatorio());
+                generoHermano3 = FuncionesPersona.generoAleatorio();
+                nombreHermano3 = FuncionesPersona.nombreAleatorio(generoHermano3);
                 apellidosHermano3 = apellidosYo;
                 edadHermano3 = (FuncionesPersona.valorEstadisticaAleatorio(0, edadMinPadres));
                 vivoHermano3 = true;
-                generoHermano3 = false;
                 sociabilidadHermano3 = (FuncionesPersona.valorEstadisticaAleatorio(50));
                 empatiaHermano3 = (FuncionesPersona.valorEstadisticaAleatorio(50));
                 inteligenciaHermano3 = (FuncionesPersona.valorEstadisticaAleatorio(50));
@@ -107,11 +107,11 @@ public class Main {
                 fuerzaHermano3 = (FuncionesPersona.valorEstadisticaAleatorio(50));
 
             case 2:
-                nombreHermano2 = FuncionesPersona.nombreAleatorio(FuncionesPersona.generoAleatorio());
+                generoHermano2 = FuncionesPersona.generoAleatorio();
+                nombreHermano2 = FuncionesPersona.nombreAleatorio(generoHermano2);
                 apellidosHermano2 = apellidosYo;
                 edadHermano2 = (FuncionesPersona.valorEstadisticaAleatorio(0, edadMinPadres));
                 vivoHermano2 = true;
-                generoHermano2 = false;
                 sociabilidadHermano2 = (FuncionesPersona.valorEstadisticaAleatorio(50));
                 empatiaHermano2 = (FuncionesPersona.valorEstadisticaAleatorio(50));
                 inteligenciaHermano2 = (FuncionesPersona.valorEstadisticaAleatorio(50));
@@ -119,11 +119,11 @@ public class Main {
                 fuerzaHermano2 = (FuncionesPersona.valorEstadisticaAleatorio(50));
 
             case 1:
-                nombreHermano1 = FuncionesPersona.nombreAleatorio(FuncionesPersona.generoAleatorio());
+                generoHermano1 = FuncionesPersona.generoAleatorio();
+                nombreHermano1 = FuncionesPersona.nombreAleatorio(generoHermano1);
                 apellidosHermano1 = apellidosYo;
                 edadHermano1 = (FuncionesPersona.valorEstadisticaAleatorio(0, edadMinPadres));
                 vivoHermano1 = true;
-                generoHermano1 = false;
                 sociabilidadHermano1 = (FuncionesPersona.valorEstadisticaAleatorio(50));
                 empatiaHermano1 = (FuncionesPersona.valorEstadisticaAleatorio(50));
                 inteligenciaHermano1 = (FuncionesPersona.valorEstadisticaAleatorio(50));
